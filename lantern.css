@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body{
+    overflow: hidden;
+
+}
+body{
+    background-image: url(Hinh-nen-trung-thu-mobile-18.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+@media (max-width: 480px) {
+    body{
+    background-image: url(mobile.jpg);
+    }
+}
+@media(min-width: 481px){
+    body{
+        background-image: url(ipad.jpg);
+        background-size: cover;
+    }
+}
+@media (min-width: 1025px) {
+    body{
+        background-image: url(laptop.jpg);
+    }
+    
+}
+.lantern{
+    width: 100px;
+    position: absolute;
+    animation: fly-lantern 10s linear forwards;
+    filter: drop-shadow(0 0 15px yellow);
+}
+@keyframes fly-lantern {
+    0%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-1000px);
+        opacity: 1
+    }
+}
