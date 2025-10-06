@@ -17,8 +17,8 @@
             lantern.style.bottom = '0px';
             lantern.style.left = Math.random () * window.innerWidth + 'px';
         //Thêm vào body
-            document.body.appendChild(lantern)
-
+            document.body.appendChild(lantern);
+            lantern.addEventListener("animationend", () => lantern.remove());
         }
         setInterval(creatLantern, 500)
     </script>
