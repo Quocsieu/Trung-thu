@@ -63,10 +63,11 @@ body{
     }
     95%{
         transform: translate(0, 0);
-        opacity: 1
+        opacity: 1;
     }
     100%{
         transform: translateY(-1000px);
-        opacity: 0
+        opacity: 0;
     }
 }
+
