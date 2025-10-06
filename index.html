@@ -13,6 +13,9 @@
             const lantern = document.createElement('img');
             lantern.src = 'lantern-xoaphong.png'
             lantern.className = 'lantern'
+        //tạo cho đèn container
+            const container = documentGetById('lantern-container')
+            container.appendChild(lantern)
         //Vị trí xuất hiện
             lantern.style.bottom = '0px';
             lantern.style.left = Math.random () * window.innerWidth + 'px';
@@ -22,5 +25,8 @@
         }
         setInterval(creatLantern, 500)
     </script>
+    <div id="lantern-container">
+        <script src="lantern.js"></script>
+    </div>
 </body>
 </html>
