@@ -3,20 +3,25 @@
     padding: 0px;
     box-sizing: border-box;
 }
-html, body{
+html{
+    min-height: 100vh;
+    width: 100vw;
     overflow: hidden;
-
+    background-repeat: no-repeat;
+background-position: center;
 }
 body{
-    background-image: url(Hinh-nen-trung-thu-mobile-18.jpg);
-    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+    overflow: hidden;
     
 }
 @media (max-width: 480px) {
     body{
-    background-image: url(mobile.jpg);
+        background-image: url(mobile.jpg);
+        background-size: cover;
     }
 }
 @media(min-width: 481px){
@@ -28,6 +33,7 @@ body{
 @media (min-width: 1025px) {
     body{
         background-image: url(laptop.jpg);
+        background-size: cover;
     }
     
 }
