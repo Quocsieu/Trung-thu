@@ -49,7 +49,7 @@ body{
 .lantern{
     width: 100px;
     position: absolute;
-    animation: fly-lantern 10s linear forwards;
+    animation: fly-lantern 20s linear forwards;
     filter: drop-shadow(0 0 15px yellow);
 }
 @keyframes fly-lantern {
@@ -66,3 +66,4 @@ body{
         opacity: 0
     }
 }
+
