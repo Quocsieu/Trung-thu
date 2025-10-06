@@ -19,15 +19,13 @@
         //Vị trí xuất hiện
             lantern.style.bottom = '0px';
             lantern.style.left = Math.random () * window.innerWidth + 'px';
-        //Thêm vào body
-            document.body.appendChild(lantern);
+        //khi kết thúc
             lantern.addEventListener("animationend", () => lantern.remove());
         }
-        setInterval(creatLantern, 500)
+        setInterval(creatLantern, 1000)
     </script>
     <div id="lantern-container">
         <script src="lantern.js"></script>
     </div>
 </body>
 </html>
-
